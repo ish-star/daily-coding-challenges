@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DailyCodingChallenges/Challenges/bin
+/DailyCodingChallenges/Challenges/obj
+/DailyCodingChallenges/Tests/bin
+/DailyCodingChallenges/Tests/obj
+/DailyCodingChallenges/.vs/DailyCodingChallenges/v16
