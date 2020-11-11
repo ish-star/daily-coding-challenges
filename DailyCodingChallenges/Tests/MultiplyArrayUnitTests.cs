@@ -6,12 +6,20 @@ namespace Tests
     [TestClass]
     public class MultiplyArrayUnitTests
     {
+        IMultiplyArray _testClass;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _testClass = new MultiplyArray();
+        }
+
         [TestMethod]
         public void MultiplyNumbersInArrayAndReturnArray_LengthOfThreeArray()
         {
             var array = new[] { 3, 2, 1};
 
-            var result = MultiplyArray.MultiplyNumbersInArrayAndReturnArray(array);
+            var result = _testClass.MultiplyNumbersInArrayAndReturnArray(array);
 
             Assert.AreEqual(2, result[0]);
             Assert.AreEqual(3, result[1]);
@@ -23,7 +31,7 @@ namespace Tests
         {
             var array = new[] { 1, 2, 3, 4, 5 };
 
-            var result = MultiplyArray.MultiplyNumbersInArrayAndReturnArray(array);
+            var result = _testClass.MultiplyNumbersInArrayAndReturnArray(array);
 
             Assert.AreEqual(120, result[0]);
             Assert.AreEqual(60, result[1]);

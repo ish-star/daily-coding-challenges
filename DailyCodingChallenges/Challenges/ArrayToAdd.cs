@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Challenges
 {
-    
-    public class ArrayToAdd
+
+    public class ArrayToAdd : IArrayToAdd
     {
         //Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
-        public static bool DoesArrayContainTwoNumbersThatEqualk(int k, int[] array)
+        public bool DoesArrayContainTwoNumbersThatEqualk(int k, int[] array)
         {
             HashSet<int> neededValues = new HashSet<int>(array.Length);
 

@@ -1,9 +1,9 @@
 ﻿namespace Challenges
 {
-    public class MultiplyArray
+    public class MultiplyArray :IMultiplyArray
     {
         //Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
-        public static int[] MultiplyNumbersInArrayAndReturnArray(int[] array)
+        public int[] MultiplyNumbersInArrayAndReturnArray(int[] array)
         {
             var resultArray = new int[array.Length];
 
