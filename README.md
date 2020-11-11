@@ -17,3 +17,8 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 
 Follow-up: what if you can't use division?  Loop within a loop, of course, is a way to brute force it.... :-/
 
+## MoneySpent*.cs
+A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with a give budget. Given price lists for keyboards and USB drives and a budget, find the cost to buy them. If it is not possible to buy both items, return .
+
+For example: if your input was a budget of 60, a list of keyboards with prices [40,50,60], and drives [5,8,12], then the most expensive combination a person can spend is 58.
+
