@@ -6,12 +6,20 @@ namespace Tests
     [TestClass]
     public class ArrayToAddTests
     {
+        IArrayToAdd _testClass;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _testClass = new ArrayToAdd();
+        }
+
         [TestMethod]
         public void DoesArrayContainTwoNumbersThatEqualk_True()
         {
             var array = new[] { 10, 15, 3, 7 };
 
-            var result = ArrayToAdd.DoesArrayContainTwoNumbersThatEqualk(17, array);
+            var result = _testClass.DoesArrayContainTwoNumbersThatEqualk(17, array);
 
             Assert.IsTrue(result);
         }
@@ -21,7 +29,7 @@ namespace Tests
         {
             var array = new[] { 10, 15, 3, 6 };
 
-            var result = ArrayToAdd.DoesArrayContainTwoNumbersThatEqualk(17, array);
+            var result = _testClass.DoesArrayContainTwoNumbersThatEqualk(17, array);
 
             Assert.IsFalse(result);
         }
